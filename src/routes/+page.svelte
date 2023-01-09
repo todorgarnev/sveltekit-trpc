@@ -14,11 +14,5 @@
 
 <h4>Loading data in<br /><code>+page.svelte</code></h4>
 
-<a
-	href="#load"
-	role="button"
-	class="secondary"
-	aria-busy={loading}
-	on:click|preventDefault={loadData}>Load</a
->
+<button on:click={loadData}> Load </button>
 <p>{greeting}</p>
